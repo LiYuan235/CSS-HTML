@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1666580989011') format('truetype');
+  src: url('iconfont.ttf?t=1666596125682') format('truetype');
 }
 
 .iconfont {
@@ -11,8 +11,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-xiala:before {
+  content: "\e6b9";
+}
+
 .icon-dingwei:before {
   content: "\e524";
-  color: #F10215;
 }
 
