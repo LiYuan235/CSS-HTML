@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .outer{
+            width: 600px;
+            margin:50px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        }
+        /* 设置标题 */
+        caption{
+            text-align: left;
+            color:#333e4f;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* 设置表格 */
+        table{
+            margin:50px auto;
+            border-collapse: collapse;
+        }
+        /* 设置表头 */
+        th{
+            border: 1px solid #c0c0c0;
+            background-color: #333e4f;
+            color: #c0c0c0;
+            font-size:22px ;
+        }
+        /* 设置单元格 */
+        td{
+            width: 80px;
+            height: 60px;
+            border: 1px solid #c0c0c0;
+            vertical-align: top;
+            color:#333e4f;
+            font-weight: bold;
+            padding: 10px;
+        }
+        td:hover{
+            background-color: #ff0;
+        }
+        /* 将前边的单元格设置成其他样式 */
+        td:empty{
+            background-color: #d7dde6;
+        }
+        tr:last-child td:last-child{
+            background-color: #f3f3f3;
+        }
+        /* 设置节日的文字 */
+        .jie{
+            color: #777777;
+            font-size: 12px;
+            position:absolute;
+            left:10px;
+            bottom: 10px;
+        }
+        .jie-1{
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <table class="inner">
+            <!-- 设置表格的标题 -->
+            <caption>2019 六月</caption>
+            <tr>
+             <th>周日</th>
+             <th>周一</th>
+             <th>周二</th>
+             <th>周三</th>
+             <th>周四</th>
+             <th>周五</th>
+             <th>周六</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="jie-1">1
+                    <span class="jie">儿童节</span>
+                </td> 
+             </tr>
+
+             <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td> 
+             </tr>
+
+             <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td> 
+             </tr>
+
+             <tr>
+                <td class="jie-1">16
+                    <span class="jie">父亲节</span>
+                </td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td> 
+             </tr>
+
+             <tr>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td> 
+             </tr>
+
+             <tr>
+                <td>30</td>
+                <td colspan="6">Notes</td>
+                 
+             </tr>
+            
+        </table>
+
+    </div>
+</body>
+</html>
