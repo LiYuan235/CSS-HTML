@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,62 +8,98 @@
     <title>Document</title>
 </head>
 <style>
-    *{
-        margin:0;
-        padding:0;
+    * {
+        margin: 0;
+        padding: 0;
     }
-    body{
+
+    body {
         background-color: #5ad5b7;
     }
-    .outer{
+
+    .outer {
         width: 800px;
         height: 600px;
-        margin:100px auto;
+        margin: 100px auto;
         background-image: url('img/bg.jpg');
         overflow: hidden;
     }
+
     /* 设置内部容器 */
-    .inner{
+    .inner {
         width: 368px;
         height: 454px;
-        background-color: aliceblue;
-        margin:72px auto;
-        margin-top: 72px;  
+        background-color: #FFFFFF;
+        margin: 72px auto;
+        margin-top: 72px;
+        overflow: hidden;
     }
-    .inner .avatar{
+
+    .inner .avater {
         width: 107px;
         height: 107px;
-        background-color: url('img/avatar.png');
+        background-image: url('img/avatar.png');
         border-radius: 50%;
+        margin: 48px auto 32px;
     }
+    /* 设置表单 */
+    .form-wrapper{
+        text-align: center;
+    }
+    .inner input[type='text'],
+    .inner input[type='password']{
+        width: 239px;
+        height: 56px;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        background-color: none;
+        font-size: large;
+        padding-left: 10px;
 
-
+    }
+    .inner input[type='text']:focus,
+    .inner input[type='password']:focus{
+       border-color: #3eb18b;;
+    }
+    .inner input[type='submit']{
+        margin-top: 74px;
+        color: #3eb18b;
+        border:none;
+        background-color: transparent;
+        outline:none;
+        font-size: large;
+        /* 设置鼠标的样式 */
+        cursor: pointer;
+    }
 </style>
+
 <body>
     <div class="outer">
         <!-- 创建内部容器 -->
         <div class="inner">
-        <!-- 创建一个头像 -->
-            <div class="avater"></div>
-        <!-- 创建表单 -->
-        <div class="form-wrapper">
-            <form action="#">
-                <input type="text" placeholder="用户名">
-                <input type="password">
-                <input type="submit">
-            </form>
+            <!-- 创建一个头像 -->
+            <div class="avater">
+            </div>
+            <!-- 创建表单 -->
+            <div class="form-wrapper">
+                <form action="#">
+                    <div class="text-wrapper">
+                        <input type="text" placeholder="用户名">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="密码">
+                    </div>
+                    <div>
+                        <input type="submit" value="登录→">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-        
-    </div>
 
 
-    
+
 </body>
+
 </html>
-
-
-
-
-
-    
