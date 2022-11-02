@@ -14,6 +14,16 @@
     /* 向左浮动 */
     float: left;
 }
+/* 设置左侧的二维码 */
+.code{
+    width: 124px;
+    height: 150px;
+    background-color: rgb(240, 231, 231);
+    position: absolute;
+}
+.code img{
+    margin:20px;
+}
 .info-bar,.car-bar{
     float:right;
 }
@@ -53,3 +63,5 @@
     text-align: center;
     background-color: #424242;
 }
+
+
